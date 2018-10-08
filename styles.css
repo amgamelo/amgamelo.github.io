@@ -1,0 +1,145 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Megrim|Raleway');
+
+
+
+html{
+    font-size: 100%;
+    background-color: black;
+}
+
+body{
+    margin: 2em 0em 2em 2em;
+}
+
+img{
+    max-width: 100%;
+    padding-left: 100px;
+}
+
+div{
+    display: grid;
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "footer";
+    max-width: 1200px;
+}
+
+header{
+    grid-area: header;
+    background-image: url('grouppraise.png');
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 150px;
+    margin-bottom: -30px;
+    margin-top: -50px;
+    padding-top: -15px;
+}
+
+nav li{
+    list-style-type: none;
+    display: inline;
+    background-color: black;
+    font-family: 'Megrim', cursive;  
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+}
+
+nav a{
+    text-decoration: none;
+    color: red;
+}
+
+nav a:hover{
+
+    color: rgb(21,101,192);
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Megrim', sans-serif;
+
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    padding-left: 100px;
+}
+
+main{
+    grid-area: main;
+
+    margin-top: -7.5px;
+    background-color: darkgrey;
+}
+
+.bookdesc{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0px;
+}
+
+#book{
+    width:200px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#desc{
+    margin-left: -50px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 3(1fr);
+    grid-gap: 0px;
+}
+
+.lecture{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.videochat{
+    margin-left: -50px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.organize{
+    display: grid;
+    grid-template-columns: 3(1fr);
+    grid-gap: 0px;
+}
+
+.l1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.info{
+    margin-left: -50px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+footer{
+    grid-area: footer;
+}
+
+
